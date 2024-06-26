@@ -18,12 +18,18 @@
       let check3 = document.getElementById('controle-3').checked;
       if (check1) {
         document.getElementById('img-1').style.display = 'block';
+      } else {
+        document.getElementById('img-1').style.display = 'none';
       }
       if (check2) {
         document.getElementById('img-2').style.display = 'block';
+      } else {
+        document.getElementById('img-2').style.display = 'none';
       }
       if (check3) {
         document.getElementById('img-3').style.display = 'block';
+      } else {
+        document.getElementById('img-2').style.display = 'none';
       }
     }
   </script>
@@ -36,7 +42,7 @@
     <label for="controle-2">Image 2</label><br>
     <input type="checkbox" name="controle-3" id="controle-3">
     <label for="controle-3">Image 3</label><br>
-    <input type="submit" value="Afficher" onclic="affichage()">
+    <input type="submit" value="Afficher" onclick="affichage()">
     <img id="img-1" style="display: none; width: 200px; height: 200px" src="Image1.jpg">
     <img id="img-2" style="display: none; width: 200px; height: 200px" src="Image2.jpg">
     <img id="img-3" style="display: none; width: 200px; height: 200px" src="Image3.jpg">
