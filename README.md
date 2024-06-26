@@ -1,4 +1,4 @@
-# Exercice Bibliotheque d'images  
+# Exercice Bibliotheque d'images 
 
 1° - Faites un Fork de ce Repository GitHub.  
 2° - Mettre en ligne votre code et observez le résultat.  
