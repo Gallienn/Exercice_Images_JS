@@ -12,19 +12,6 @@
       }
     </style>
   </head>
-  <body>
-    <h1>Image(s) à afficher ? </h1>
-    <input type="checkbox" name="controle-1" id="controle-1">
-    <label for="controle-1">Image 1</label><br>
-    <input type="checkbox" name="controle-2" id="controle-2">
-    <label for="controle-2">Image 2</label><br>
-    <input type="checkbox" name="controle-3" id="controle-3">
-    <label for="controle-3">Image 3</label><br>
-    <input type="submit" value="Afficher">
-    <img id="img-1" style="display: none; width: 200px; height: 200px" src="Image1.jpg">
-    <img id="img-2" style="display: none; width: 200px; height: 200px" src="Image2.jpg">
-    <img id="img-3" style="display: none; width: 200px; height: 200px" src="Image3.jpg">
-  </body>
   <script>
     function affichage {
       let check1 = document.getElementById('controle-1').checked;
@@ -41,4 +28,17 @@
       }
     }
   </script>
+  <body>
+    <h1>Image(s) à afficher ? </h1>
+    <input type="checkbox" name="controle-1" id="controle-1">
+    <label for="controle-1">Image 1</label><br>
+    <input type="checkbox" name="controle-2" id="controle-2">
+    <label for="controle-2">Image 2</label><br>
+    <input type="checkbox" name="controle-3" id="controle-3">
+    <label for="controle-3">Image 3</label><br>
+    <input type="submit" value="Afficher" onclic="affichage()">
+    <img id="img-1" style="display: none; width: 200px; height: 200px" src="Image1.jpg">
+    <img id="img-2" style="display: none; width: 200px; height: 200px" src="Image2.jpg">
+    <img id="img-3" style="display: none; width: 200px; height: 200px" src="Image3.jpg">
+  </body>
 </html>
