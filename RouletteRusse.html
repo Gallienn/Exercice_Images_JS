@@ -8,23 +8,28 @@ function lancer(){
 	console.log(randomNumber);
 	let result = 'Br' + randomNumber;
 	console.log(result);
-	document.getElementById(result).style.fill = "blue";
-	let gain = '';
-	switch(count) {
-		case(1):
-			gain = 'Vous gagnez 10.000E';
-			break;
-		case(2):
-			gain = 'Vous gagnez 100.000E';
-			break;
-		case(3):
-			gain = 'Vous gagnez 1.000.000E';
-			break;
-		default:
-			gain = 'Vous n\'avez sélectionné aucune chambre!';
-			break;
+	let circle = document.getElementById(result);
+	let currentColor = window.getComputedStyle(circle).fill;
+	if (currentColor === 'red' || currentColor === 'rgb(255, 0, 0)') {
+		alter('Vous avez perdu!');
+	else {
+		let gain = '';
+		switch(count) {
+			case(1):
+				gain = 'Vous gagnez 10.000E';
+				break;
+			case(2):
+				gain = 'Vous gagnez 100.000E';
+				break;
+			case(3):
+				gain = 'Vous gagnez 1.000.000E';
+				break;
+			default:
+				gain = 'Vous n\'avez sélectionné aucune chambre!';
+				break;
+		}
+		alert(gain);
 	}
-	alert(gain);
 }
 
 let count = 0; 
