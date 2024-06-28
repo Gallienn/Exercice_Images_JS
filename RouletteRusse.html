@@ -11,7 +11,7 @@ function lancer(){
 	let circle = document.getElementById(result);
 	let currentColor = window.getComputedStyle(circle).fill;
 	if (currentColor === 'red' || currentColor === 'rgb(255, 0, 0)') {
-		alter('Vous avez perdu!');
+		alert('Vous avez perdu!');
 	else {
 		let gain = '';
 		switch(count) {
