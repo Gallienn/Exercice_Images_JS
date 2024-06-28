@@ -32,7 +32,7 @@ let count = 0;
 function rouge(event){
 	if (count >= 3) {
 		alert('La sélection est limitée à trois chambres!');
-	} else if (event.target.style.fill === 'gray') {
+	} else if (event.target.style.fill === 'rgb(128, 128, 128)') {
 		event.target.style.fill = 'red';
 		count++;
 	} else {
