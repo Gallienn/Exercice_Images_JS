@@ -2,15 +2,18 @@
 <head>
 <script>
 function lancer(){
-        alert("le barillet tourne");
+        alert("Le barillet tourne!");
 	let randomNumber = Math.floor(Math.random() * 6) + 1;
 	console.log(randomNumber);
+	let result = 'Br' + randomNumber;
+	console.log(result);
+	document.getElementById(result).style.fill = "blue";
 	
 }
 function rouge(event){
-	console.log('function rouge() déclenché');
 	event.target.style.fill = "red";
 }
+
 </script>
 
 
