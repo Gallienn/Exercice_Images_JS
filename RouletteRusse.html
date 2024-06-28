@@ -30,10 +30,12 @@ function lancer(){
 let count = 0; 
 	
 function rouge(event){
+	let circle = event.target;
+	let fillColor = window.getComputedStyle(circle).fill;
 	if (count >= 3) {
 		alert('La sélection est limitée à trois chambres!');
-	} else if (event.target.style.fill === 'rgb(128, 128, 128)') {
-		event.target.style.fill = 'red';
+	} else if (fillColor === 'rgb(128, 128, 128)' || fillColor === 'gray') {
+		circle.style.fill = 'red';
 		count++;
 	} else {
 		console.log('Le cercle est déjà rouge');
